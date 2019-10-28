@@ -1,46 +1,81 @@
 <!-- Toolbar -->
 <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
-    <a class="navbar-brand" href="#">{{name}}</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-  
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item active">
-          <a class="nav-link" href="#">About<span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Resume</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Projects</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Contact</a>
-        </li>
-      </ul>
-      
-    </div>
-  </nav>
+  <a class="navbar-brand" href="#">{{ name }}</a>
+  <button
+    class="navbar-toggler"
+    type="button"
+    data-toggle="collapse"
+    data-target="#navbarSupportedContent"
+    aria-controls="navbarSupportedContent"
+    aria-expanded="false"
+    aria-label="Toggle navigation"
+  >
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#about"
+          >About<span class="sr-only">(current)</span></a
+        >
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#resume">Resume</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Projects</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Contact</a>
+      </li>
+    </ul>
+  </div>
+</nav>
 <!-- Toolbar END -->
 
-
 <div class="text-center">
-    <img src="../assets/DSC_0007.png" class="rounded-circle" width="200" height="200">
-    <br>
-    {{occupation}}
+  <img
+    src="../assets/DSC_0007.png"
+    class="rounded-circle"
+    width="200"
+    height="200"
+  />
+  <br />
+  <h5>{{ occupation }}</h5>
 </div>
 
-<hr>
+<br />
+<hr />
 
 <!-- About -->
-<div class="text-center mt-4">
-  <h2>About</h2>
+<section class="mt-4" id="about">
+  <div  class="container">
+    <h2 class="text-center" >About</h2>
+    <p class="lead text-justify mt-4">
+      Motivated. Persistent. Focused. I've had a versatile but always focused
+      path with the goal of working as a software developer. I took a
+      professional computer management course and worked as an intern, as part
+      of the program of this course at an accounting firm. I worked part-time as
+      a waiter during the 3 years I took to complete my Bachelor's degree in
+      Computer Engineering, at ISCTE-IUL. My experiences have ended up giving me
+      communication skills in several languages, conflict and time management as
+      well as a broad knowledge in computer science. Currently a full-stack
+      developer at CGI and studying for a Master's degree in Computer
+      Engineering.
+    </p>
+  </div>
+</section>
 
-</div>
-<!-- About END -->
+<br/>
+<hr/>
 
+<!-- Resume -->
 
-
-
+<section class="mt-4" id="resume">
+  <div  class="container">
+    <h2 class="text-center" >Resume</h2>
+    <p class="lead text-justify mt-4">
+      WIP
+  </div>
+</section>
