@@ -1,4 +1,4 @@
-<!-- Toolbar -->
+<!-- Navbar -->
 <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
   <a class="navbar-brand" href="#">{{ name }}</a>
   <button
@@ -24,105 +24,201 @@
         <a class="nav-link" href="#resume">Resume</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Projects</a>
+        <a class="nav-link" href="#projects">Projects</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Contact</a>
+        <a class="nav-link" href="#contact">Contact</a>
       </li>
     </ul>
   </div>
 </nav>
 <!-- Toolbar END -->
 
-<div class="text-center">
-  <img
-    src="../assets/DSC_0007.png"
-    class="rounded-circle"
-    width="200"
-    height="200"
-  />
+<div>
+  <div class="text-center">
+    <img
+      src="../assets/DSC_0007.png"
+      class="rounded-circle"
+      width="200"
+      height="200"
+    />
+    <br />
+    <br />
+    <h4>{{ occupation }}</h4>
+  </div>
+
   <br />
+  <hr />
+
+  <!-- About -->
+  <section class="mt-4" id="about">
+    <div class="container">
+      <div class="row text-center">
+        <div class="col-12">
+          <h2>About</h2>
+        </div>
+      </div>
+      <div class="row mt-2">
+        <div class="col-12">
+          <p class="lead text-justify">
+            Motivated. Persistent. Focused. I've had a versatile but always
+            focused path with the goal of working as a software developer. I
+            took a professional computer management course and worked as an
+            intern, as part of the program of this course at an accounting firm.
+            I worked part-time as a waiter during the 3 years I took to complete
+            my Bachelor's degree in Computer Engineering, at ISCTE-IUL. My
+            experiences have ended up giving me communication skills in several
+            languages, conflict and time management as well as a broad knowledge
+            in computer science. Currently a full-stack developer at CGI and
+            studying for a Master's degree in Computer Engineering.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <br />
-  <h5>{{ occupation }}</h5>
+  <hr />
+
+  <!-- Resume -->
+
+  <section class="mt-4" id="resume">
+    <div class="container">
+      <div class="row text-center">
+        <div class="col-12">
+          <h2>Resume</h2>
+        </div>
+      </div>
+      <div class="row mt-2">
+        <div class="col-12">
+          <h3>Experience</h3>
+        </div>
+      </div>
+      <div class="row mt-4">
+        <div class="col-4 col-md-2 col-lg-1">
+          <img
+            src="../assets/1.png"
+            class="rounded-circle"
+            width="75"
+            height="75"
+          />
+        </div>
+        <div class="col-8 col-md-10 col-lg-11">
+          <p>
+            Developer<br />
+            CGI<br />
+            2017-Present
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 text-justify">
+          <p>
+            As a software developer I've contributed to international projects
+            using a variety of technologies. I've worked as a full-stack
+            developer meaning that I have experience in both frontend
+            technologies like Angular as well as backend technologies like Java
+            and C#.<br />
+            The first big project was a monolith using Java EE, Spring,
+            Hibernate, Angular and build and automation tools like Maven and
+            Jenkins. After a couple of smaller projects using more or less the
+            same technology stack I've contributed to another big international
+            project with a microservice architecture using agile methologies
+            like Scrum and a CI/CD culture. This time I used the Microsoft stack
+            consisting of ASPNET.Core (C# as the main programming language) and
+            the Azure ecosystem namely Service Bus, DevOps, Blob and Table
+            Storage.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="container mt-2">
+      <div class="row">
+        <div class="col-12">
+          <h3>Education</h3>
+        </div>
+      </div>
+      <div class="row mt-4">
+        <div class="col-4 col-md-2 col-lg-1">
+          <img
+            src="../assets/0.png"
+            class="rounded-circle"
+            width="75"
+            height="75"
+          />
+        </div>
+        <div class="col-8 col-md-10 col-lg-11">
+          <p>
+            ISCTE - University Institute of Lisbon<br />
+            Master of Science (MSc), Computer Engineering<br />
+            Information Systems and Knowledge Management<br />
+            2018-2021
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-8 offset-4 col-md-10 offset-md-2 col-lg-11 offset-lg-1">
+          <p>
+            ISCTE - University Institute of Lisbon<br />
+            Bachelor of Science (BSc), Computer Engineering<br />
+            2014-2017
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 text-justify">
+          <p>
+            My Bachelor's degree has provided me the necessary foundations and
+            skills to work in the IT sector, mainly as a software engineer,
+            thanks to the variety of subjects taught, ranging from object
+            oriented and concurrent programming to digital networks and database
+            management. Later, after having some profissional experience I
+            decided that I wanted to extend my academic knowledge in the field
+            of computer science and information systems so I started studying
+            for a Master's degree. I've had hands on experience with very
+            interesting subjects like machine learning, business intelligence
+            and data mining and I hope I can work in these areas in the future.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <br />
+  <hr />
+
+  <!-- Projects -->
+  <section class="mt-4" id="projects">
+    <div class="container">
+      <div class="row text-center">
+        <div class="col-12">
+          <h2>Projects</h2>
+        </div>
+      </div>
+    </div>
+  </section>
 </div>
 
-<br />
-<hr />
+<hr>
 
-<!-- About -->
-<section class="mt-4" id="about">
-  <div class="container">
-    <h2 class="text-center">About</h2>
-    <div class="row">
-      <p class="lead text-justify mt-4">
-        Motivated. Persistent. Focused. I've had a versatile but always focused
-        path with the goal of working as a software developer. I took a
-        professional computer management course and worked as an intern, as part
-        of the program of this course at an accounting firm. I worked part-time
-        as a waiter during the 3 years I took to complete my Bachelor's degree
-        in Computer Engineering, at ISCTE-IUL. My experiences have ended up
-        giving me communication skills in several languages, conflict and time
-        management as well as a broad knowledge in computer science. Currently a
-        full-stack developer at CGI and studying for a Master's degree in
-        Computer Engineering.
-      </p>
-    </div>
-  </div>
-</section>
-
-<br />
-<hr />
-
-<!-- Resume -->
-
-<section class="mt-4" id="resume">
-  <h2 class="text-center">Resume</h2>
-  <div class="container"> <!-- Experience -->
-    <div class="row">
-      <h3>Experience</h3>
-    </div>
+<footer class="footer" id="contact">
+  <div class="container text-center">
     <div class="row mt-4">
-        <img
-        src="../assets/1.png"
-        class="rounded-circle"
-        width="75"
-        height="75"
-      />
-      <p class="text-justify col-8">
-          CGI<br />
-          Developer<br />
-          2017-Present
-        </p>
-      <p>
-        As my first job as a programmer I've contributed to international projects using a variety of technologies.
-        I've worked as a full-stack developer meaning that I have experience in both frontend technologies like JavaScript and Angular aswell as backend technologies like Java and C#.
-      </p>
+      <div class="col-4">
+        <a href="https://www.linkedin.com/tiagomartinhos">LinkedIn</a>
+      </div>
+      <div class="col-4">
+        <a href="https://github.com/tiago-martinho">GitHub</a>
+      </div>
+      <div class="col-4">
+        <a href="mailto:tiagomartinho.soares@gmail.com"
+          >tiagomartinho.soares@gmail.com</a
+        >
+      </div>
     </div>
+    <div class="text-muted mt-4">
+      © 2019 Tiago Martinho
+    </div>
+    <br>
   </div>
-  <div class="container mt-4"> <!-- Education -->
-    <div class="row">
-      <h3>Education</h3>
-    </div>
-    <div class="row mt-4">
-      <img
-        src="../assets/0.png"
-        class="rounded-circle"
-        width="75"
-        height="75"
-      />
-      <p class="text-justify col-8">
-        ISCTE - University Institute of Lisbon<br />
-        Master of Science (MSc), Computer Engineering<br />
-        Information Systems and Knowledge Management<br />
-        2018-2021
-      </p>
-    </div>
-    <div class="row">
-      <p class="text-justify col-8" style="padding-left: 90px">
-        ISCTE - University Institute of Lisbon<br />
-        Bachelor of Science (BSc), Computer Engineering<br />
-        2014-2017
-      </p>
-    </div>
-  </div>
-</section>
+</footer>
