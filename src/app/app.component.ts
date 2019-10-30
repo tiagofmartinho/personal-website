@@ -8,5 +8,4 @@ import { Component, ViewChild, ElementRef } from '@angular/core';
 export class AppComponent {
   name = 'Tiago Martinho';
   occupation = 'Software Engineer';
-
 }

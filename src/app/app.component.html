@@ -15,18 +15,32 @@
 
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
-      <li class="nav-item active">
-        <a class="nav-link"
-          >About<span class="sr-only">(current)</span></a
-        >
+      <li
+        class="nav-item"
+        data-toggle="collapse"
+        data-target=".navbar-collapse.show"
+      >
+        <a class="nav-link" href="#about">About</a>
       </li>
-      <li class="nav-item">
+      <li
+        class="nav-item"
+        data-toggle="collapse"
+        data-target=".navbar-collapse.show"
+      >
         <a class="nav-link" href="#resume">Resume</a>
       </li>
-      <li class="nav-item">
+      <li
+        class="nav-item"
+        data-toggle="collapse"
+        data-target=".navbar-collapse.show"
+      >
         <a class="nav-link" href="#projects">Projects</a>
       </li>
-      <li class="nav-item">
+      <li
+        class="nav-item"
+        data-toggle="collapse"
+        data-target=".navbar-collapse.show"
+      >
         <a class="nav-link" href="#contact">Contact</a>
       </li>
     </ul>
@@ -80,15 +94,29 @@
   <br />
   <hr />
 
-  <!-- Resume -->
-
-  <section class="mt-4" id="resume">
+  <!-- Projects -->
+  <section class="mt-4" id="projects">
     <div class="container">
       <div class="row text-center">
         <div class="col-12">
-          <h2>Resume</h2>
+          <h2>Projects</h2>
         </div>
       </div>
+    </div>
+  </section>
+
+  <br />
+  <hr />
+
+  <!-- Resume -->
+
+  <section class="mt-4" id="resume">
+    <div class="row text-center">
+      <div class="col-12">
+        <h2>Resume</h2>
+      </div>
+    </div>
+    <div class="container">
       <div class="row mt-2">
         <div class="col-12">
           <h3>Experience</h3>
@@ -96,12 +124,7 @@
       </div>
       <div class="row mt-4">
         <div class="col-4 col-md-2 col-lg-1">
-          <img
-            src="../assets/1.png"
-            class="rounded-circle"
-            width="75"
-            height="75"
-          />
+          <img src="../assets/1.png" class="rounded" width="75" height="75" />
         </div>
         <div class="col-8 col-md-10 col-lg-11">
           <p>
@@ -140,12 +163,7 @@
       </div>
       <div class="row mt-4">
         <div class="col-4 col-md-2 col-lg-1">
-          <img
-            src="../assets/0.png"
-            class="rounded-circle"
-            width="75"
-            height="75"
-          />
+          <img src="../assets/0.png" class="rounded" width="75" height="75" />
         </div>
         <div class="col-8 col-md-10 col-lg-11">
           <p>
@@ -182,34 +200,42 @@
         </div>
       </div>
     </div>
-  </section>
-
-  <br />
-  <hr />
-
-  <!-- Projects -->
-  <section class="mt-4" id="projects">
-    <div class="container">
-      <div class="row text-center">
+    <div class="container mt-2">
+      <div class="row">
         <div class="col-12">
-          <h2>Projects</h2>
+          <h3>Certifications</h3>
+        </div>
+      </div>
+      <div class="row mt-4">
+        <div class="col-4 col-md-2 col-lg-1">
+          <img src="../assets/2.png" class="rounded" width="75" height="75" />
+        </div>
+        <div class="col-8 col-md-10 col-lg-11">
+          <p>
+            Oracle Certified Associate, Java SE 8 Programmer<br />
+            Oracle<br />
+            13th May 2019
+          </p>
         </div>
       </div>
     </div>
   </section>
 </div>
 
+<br>
+<br>
 <hr />
 
+<!-- Contact -->
 <footer class="footer" id="contact">
   <div class="container">
     <div class="row mt-4 text-center">
       <div class="col-12">
         <a href="https://www.linkedin.com/in/tiagomartinhos/" target="_blank">
-          <img src="../assets/linkedin-logo.png">
-        </a>&nbsp;
+          <img src="../assets/linkedin-logo.png" /> </a
+        >&nbsp;
         <a href="https://github.com/tiago-martinho" target="_blank">
-          <img src="../assets/github.jpg"/>
+          <img src="../assets/github.jpg" />
         </a>
       </div>
     </div>
