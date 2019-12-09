@@ -6,6 +6,10 @@ import { Component, ViewChild, ElementRef } from '@angular/core';
   styleUrls: ['./app.component.sass']
 })
 export class AppComponent {
+
   name = 'Tiago Martinho';
   occupation = 'Software Engineer';
+  lis: string[] = [
+    'About', 'Skills', 'Resume', 'Contact'
+  ];
 }

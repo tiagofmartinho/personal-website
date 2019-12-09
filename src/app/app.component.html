@@ -16,37 +16,18 @@
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
       <li
+        *ngFor="let li of lis"
         class="nav-item"
         data-toggle="collapse"
         data-target=".navbar-collapse.show"
       >
-        <a class="nav-link" href="#about">About</a>
-      </li>
-      <li
-        class="nav-item"
-        data-toggle="collapse"
-        data-target=".navbar-collapse.show"
-      >
-        <a class="nav-link" href="#projects">Projects</a>
-      </li>
-      <li
-        class="nav-item"
-        data-toggle="collapse"
-        data-target=".navbar-collapse.show"
-      >
-        <a class="nav-link" href="#resume">Resume</a>
-      </li>
-      <li
-        class="nav-item"
-        data-toggle="collapse"
-        data-target=".navbar-collapse.show"
-      >
-        <a class="nav-link" href="#contact">Contact</a>
+        <a class="nav-link" href="#{{li}}">{{ li }}</a>
       </li>
     </ul>
   </div>
 </nav>
-<!-- Toolbar END -->
+
+<!-- Navbar End -->
 
 <div>
   <div class="text-center">
@@ -65,7 +46,7 @@
   <hr />
 
   <!-- About -->
-  <section class="mt-4" id="about">
+  <section class="mt-4" id="About">
     <div class="container">
       <div class="row text-center">
         <div class="col-12">
@@ -94,20 +75,26 @@
   <br />
   <hr />
 
-  <!-- Projects -->
-  <section class="mt-4" id="projects">
+  <!-- Skills -->
+  <section class="mt-4" id="Skills">
     <div class="container">
       <div class="row text-center">
         <div class="col-12">
-          <h2>Projects</h2>
+          <h2>Skills</h2>
         </div>
       </div>
       <div class="row">
         <div class="col-12 lead text-justify mt-2">
-          <p>
-            Projects listed here are only experiments or have an academic purpose. I can't describe or share work related projects
-            for obvious reasons.
-          </p>
+          <ul>
+            <li>Java and Spring</li>
+            <li>C# and .NET Core</li>
+            <li>
+              Azure ecosystem (Service Bus, Table Storage, Blob Storage, Key
+              Vault, Machine Learning Studio, etc)
+            </li>
+            <li>Docker and Kubernetes</li>
+            <li>Angular</li>
+          </ul>
         </div>
       </div>
     </div>
@@ -118,7 +105,7 @@
 
   <!-- Resume -->
 
-  <section class="mt-4" id="resume">
+  <section class="mt-4" id="Resume">
     <div class="row text-center">
       <div class="col-12">
         <h2>Resume</h2>
@@ -230,12 +217,12 @@
   </section>
 </div>
 
-<br>
-<br>
+<br />
+<br />
 <hr />
 
 <!-- Contact -->
-<footer class="footer" id="contact">
+<footer class="footer" id="Contact">
   <div class="container">
     <div class="row mt-4 text-center">
       <div class="col-12">
