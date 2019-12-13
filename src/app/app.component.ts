@@ -9,7 +9,23 @@ export class AppComponent {
 
   name = 'Tiago Martinho';
   occupation = 'Software Engineer';
-  lis: string[] = [
+  navBarLinks: string[] = [
     'About', 'Skills', 'Resume', 'Contact'
   ];
+  activeNavLinkId = '';
+
+  setActive(id) {
+    console.log(id);
+    // if a new nav bar link was clicked, disable the old one and set the new one
+    if (id !== this.activeNavLinkId) {
+      if (this.activeNavLinkId !== '') {
+        document.getElementById(this.activeNavLinkId).className = 'nav-link';
+      }
+      if (id !== '') {
+        document.getElementById(id).className = 'nav-link active';
+      }
+      this.activeNavLinkId = id;
+    }
+}
+
 }

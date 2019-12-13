@@ -1,6 +1,6 @@
 <!-- Navbar -->
 <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
-  <a class="navbar-brand" href="#">{{ name }}</a>
+  <a (click)="setActive('')" class="navbar-brand" href="#">{{ name }}</a>
   <button
     class="navbar-toggler"
     type="button"
@@ -16,12 +16,32 @@
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
       <li
-        *ngFor="let li of lis"
         class="nav-item"
         data-toggle="collapse"
         data-target=".navbar-collapse.show"
       >
-        <a class="nav-link" href="#{{li}}">{{ li }}</a>
+        <a (click)="setActive('aboutNavLink')" id="aboutNavLink" class="nav-link" href="#about">About</a>
+      </li>
+      <li
+        class="nav-item"
+        data-toggle="collapse"
+        data-target=".navbar-collapse.show"
+      >
+        <a (click)="setActive('skillsNavLink')" id="skillsNavLink" class="nav-link" href="#skills">Skills</a>
+      </li>
+      <li
+        class="nav-item"
+        data-toggle="collapse"
+        data-target=".navbar-collapse.show"
+      >
+        <a (click)="setActive('resumeNavLink')" id="resumeNavLink" class="nav-link" href="#resume">Resume</a>
+      </li>
+      <li
+        class="nav-item"
+        data-toggle="collapse"
+        data-target=".navbar-collapse.show"
+      >
+      <a (click)="setActive('contactNavLink')" id="contactNavLink" class="nav-link" href="#contact">Contact</a>
       </li>
     </ul>
   </div>
@@ -45,7 +65,7 @@
   <hr />
 
   <!-- About -->
-  <section class="mt-4" id="About">
+  <section class="mt-4" id="about">
     <div class="container">
       <div class="row text-center">
         <div class="col-12">
@@ -75,7 +95,7 @@
   <hr />
 
   <!-- Skills -->
-  <section class="mt-4" id="Skills">
+  <section class="mt-4" id="skills">
     <div class="container">
       <div class="row text-center">
         <div class="col-12">
@@ -104,7 +124,7 @@
 
   <!-- Resume -->
 
-  <section class="mt-4" id="Resume">
+  <section class="mt-4" id="resume">
     <div class="row text-center">
       <div class="col-12">
         <h2>Resume</h2>
@@ -221,7 +241,7 @@
 <hr />
 
 <!-- Contact -->
-<footer class="footer" id="Contact">
+<footer class="footer" id="contact">
   <div class="container">
     <div class="row mt-4 text-center">
       <div class="col-12">
