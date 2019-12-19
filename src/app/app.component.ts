@@ -3,7 +3,7 @@ import { Component, ViewChild, ElementRef } from '@angular/core';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.sass']
+  styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
 
@@ -14,8 +14,8 @@ export class AppComponent {
   ];
   activeNavLinkId = '';
 
+
   setActive(id) {
-    console.log(id);
     // if a new nav bar link was clicked, disable the old one and set the new one
     if (id !== this.activeNavLinkId) {
       if (this.activeNavLinkId !== '') {
@@ -26,6 +26,6 @@ export class AppComponent {
       }
       this.activeNavLinkId = id;
     }
-}
+  }
 
 }
