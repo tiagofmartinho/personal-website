@@ -5,3 +5,15 @@ section[id]:before {
 	visibility: hidden;
 	content: "";
 }
+
+.date-text {
+    color: #000; /* Fallback for older browsers */
+    color: rgba(0, 0, 0, 0.4);
+
+    font-size: 9pt;
+    font-family: Arial, sans-serif;
+}
+
+.fa-github-square {
+    color: black;
+  }
