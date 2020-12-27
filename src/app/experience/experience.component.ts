@@ -8,8 +8,8 @@ import { Job } from '../models/job.model';
 })
 export class ExperienceComponent implements OnInit {
 
-  cgi = new Job("../assets/cgi.png", "Consultant", "CGI", "06/2017", "12/2020", cgiDesc)
-  ctw = new Job("../assets/ctw.png", "Rockstart Developer", "Critical TechWorks", "12/2020", "Present",
+  cgi = new Job("../assets/cgi.png", "Software Development Consultant", "CGI", "06/2017", "12/2020", cgiDesc)
+  ctw = new Job("../assets/ctw.png", "Rockstar Developer", "Critical TechWorks", "12/2020", "Present",
   ctwDesc)
   jobs: Job[] = [this.ctw, this.cgi]
   constructor() { }
