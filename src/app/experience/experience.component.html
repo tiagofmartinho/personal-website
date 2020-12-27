@@ -1,0 +1,30 @@
+<section class="mt-4" id="experience">
+    <div class="row text-center">
+      <div class="col-12">
+        <h2>Experience</h2>
+      </div>
+    </div>
+    <div class="container">
+      <div *ngFor="let job of jobs">
+        <div class="row mt-4">
+          <div class="col-12">
+            <img src={{job.imageUrl}} class="img-thumbnail" width="75" height="75" />
+          </div>
+        </div>
+        <br>
+        <div class="row">
+          <div class="col-12">
+              <b>{{job.role}}</b> <br />
+              <small>{{job.company}}</small><br />
+              <div class="date-text">{{job.startDate}} - {{job.endDate}}</div>    
+              <br>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 text-justify">
+            {{job.description}}
+          </div>
+        </div>
+      </div> 
+    </div>
+</section>

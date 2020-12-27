@@ -1,0 +1,18 @@
+<section class="mt-4" id="skills">
+    <div class="container">
+      <div class="row text-center">
+        <div class="col-12">
+          <h2>Skills</h2>
+        </div>
+      </div>
+      <div class="row mt-2">
+        <div class="container">
+            <h5>
+              <ng-container *ngFor="let skill of skills">
+                <span class="badge badge-dark">{{skill}}</span>&nbsp;
+              </ng-container>
+            </h5>
+        </div>
+      </div>
+    </div>
+  </section>

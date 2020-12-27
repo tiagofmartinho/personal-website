@@ -1,0 +1,24 @@
+<section class="mt-4" id="certifications">
+    <div class="row text-center">
+      <div class="col-12">
+        <h3>Certifications</h3>
+      </div>
+    </div>
+    <div class="container">
+      <div *ngFor="let certification of certifications">
+        <div class="row mt-4">
+          <div class="col-12">
+            <img src={{certification.imageUrl}} class="img-thumbnail" width="75" height="75" />
+          </div>
+        </div>
+        <br>
+        <div class="row">
+          <div class="col-12">
+              <a href={{certification.badgeUrl}} target="_blank"><b>{{certification.name}}</b></a><br />
+              <small>{{certification.company}}</small><br />
+              <div class="date-text">{{certification.date}}</div>
+          </div>
+        </div>
+      </div>
+    </div>
+</section>

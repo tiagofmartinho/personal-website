@@ -1,0 +1,63 @@
+<div id="navbar-example">
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+      <a (click)="setActive('')" class="navbar-brand" href="#">{{ name }}</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li
+            class="nav-item"
+            data-toggle="collapse"
+            data-target=".navbar-collapse.show"
+          >
+            <a (click)="setActive('aboutNavLink')" id="aboutNavLink" class="nav-link" href="#about">About</a>
+          </li>
+          <li
+            class="nav-item"
+            data-toggle="collapse"
+            data-target=".navbar-collapse.show"
+          >
+            <a (click)="setActive('skillsNavLink')" id="skillsNavLink" class="nav-link" href="#skills">Skills</a>
+          </li>
+          <li
+            class="nav-item"
+            data-toggle="collapse"
+            data-target=".navbar-collapse.show"
+          >
+            <a (click)="setActive('experienceNavLink')" id="experienceNavLink" class="nav-link" href="#experience">Experience</a>
+          </li>
+          <li
+          class="nav-item"
+          data-toggle="collapse"
+          data-target=".navbar-collapse.show"
+        >
+          <a (click)="setActive('educationNavLink')" id="educationNavLink" class="nav-link" href="#education">Education</a>
+        </li>
+        <li
+        class="nav-item"
+        data-toggle="collapse"
+        data-target=".navbar-collapse.show"
+      >
+        <a (click)="setActive('certificationsNavLink')" id="certificationsNavLink" class="nav-link" href="#certifications">Certifications</a>
+      </li>
+          <li
+            class="nav-item"
+            data-toggle="collapse"
+            data-target=".navbar-collapse.show"
+          >
+          <a (click)="setActive('contactNavLink')" id="contactNavLink" class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    </div>

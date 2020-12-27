@@ -1,0 +1,31 @@
+<section class="mt-4" id="education">
+    <div class="row text-center">
+      <div class="col-12">
+        <h3>Education</h3>
+      </div>
+    </div>
+    <div class="container">
+      <div *ngFor="let degree of degrees">
+        <div class="row mt-4">
+          <div class="col-12">
+            <img src={{degree.imageUrl}} class="img-thumbnail" width="75" height="75" />
+          </div>
+        </div>
+        <br>
+          <div class="row">
+            <div class="col-12">
+                <b>{{degree.university}}</b><br />
+                <small>{{degree.name}}</small><br />
+                <div class="date-text">{{degree.startDate}} - {{degree.endDate}}</div>
+            </div>
+          </div>
+          <div class="row mt-3">
+            <div class="col-12 text-justify">
+              <p>
+              {{degree.description}}
+              </p>
+            </div>
+          </div>
+      </div>
+    </div>
+  </section>
