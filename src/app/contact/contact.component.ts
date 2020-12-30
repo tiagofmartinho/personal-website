@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ContactComponent implements OnInit {
 
+  currentYear = new Date().getFullYear();
+
   constructor() { }
 
   ngOnInit(): void {
